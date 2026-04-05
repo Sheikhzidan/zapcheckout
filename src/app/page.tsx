@@ -25,7 +25,7 @@ return (
 <div className="max-w-2xl w-full rounded-2xl border border-zinc-700 p-8 bg-zinc-900">
 <h1 className="text-3xl font-bold mb-3">ZapCheckout ⚡️</h1>
 <p className="text-zinc-300 mb-6">
-Starkzap demo: one-click test transfer on Sepolia
+Starkzap Builder Demo — one-click Sepolia transfer
 </p>
 
 <button
