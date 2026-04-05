@@ -9,6 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@fatsolutions/tongo-sdk": "^1.4.0",
+    "@hyperlane-xyz/registry": "^19.4.0",
+    "@hyperlane-xyz/sdk": "^14.4.0",
+    "@hyperlane-xyz/utils": "^14.4.0",
     "next": "16.2.2",
     "react": "19.2.4",
     "react-dom": "19.2.4",
