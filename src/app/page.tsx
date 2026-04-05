@@ -1,3 +1,5 @@
+'use client';
+
 export default function Home() {
 return (
 <main className="min-h-screen bg-black text-white flex items-center justify-center p-8">
@@ -15,7 +17,7 @@ Starkzap Builder Demo — Phase 2 (UI + flow ready)
 
 <button
 className="w-full rounded-xl bg-blue-600 hover:bg-blue-500 px-4 py-3 font-semibold transition"
-onClick={() => alert("Next step: Starkzap connect flow")}
+onClick={() => alert('Next step: Starkzap connect flow')}
 >
 Continue Setup
 </button>
