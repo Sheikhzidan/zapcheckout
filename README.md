@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ZapCheckout ⚡️
 
-## Getting Started
+ZapCheckout is a simple Starkzap SDK demo on Starknet Sepolia.
 
-First, run the development server:
+## What it does
+
+- One-click transfer flow from UI
+- Backend API route executes Starkzap wallet transfer
+- Returns live JSON result: `ok`, `walletAddress`, `txHash`, `explorerUrl`
+
+## Live Demo
+
+https://zapcheckout-gamma.vercel.app/
+
+## GitHub
+
+https://github.com/Sheikhzidan/zapcheckout
+
+## Build in Public (X)
+
+https://x.com/antlion_pidytn/status/2040793909622694008?s=20
+
+## Tech Stack
+
+- Next.js
+- Starkzap SDK
+- Starknet Sepolia
+
+## Local Setup
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create .env.local in project root:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+STARK_PRIVATE_KEY=0xYOUR_BURNER_PRIVATE_KEY
+STARK_RECIPIENT=0xRECIPIENT_ADDRESS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+API Route
 
-## Learn More
+• POST /api/test-transfer
+• Executes a Sepolia STRK transfer via Starkzap
 
-To learn more about Next.js, take a look at the following resources:
+Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+• Use burner keys only for demo/testing
+• Never expose private keys in screenshots or public repos
